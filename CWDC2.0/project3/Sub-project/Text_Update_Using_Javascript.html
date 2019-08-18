@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Update</title>
+	</head>
+	<body>
+		<input type="text" id="inp">
+		<button id="btn">Update</button>
+		<p id="text">Hello</p>
+		<script type="text/javascript">
+			document.getElementById("btn").onclick=function()
+			{
+				var s=document.getElementById("inp").value;
+				if(s=="")
+					alert("Enter some text.");
+				else
+					document.getElementById("text").innerHTML=s;
+			}
+		</script>
+	</body>
+</html>

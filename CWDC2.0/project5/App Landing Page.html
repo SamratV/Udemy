@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>MyApp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<style type="text/css">
+		.jumbotron{
+			background-image: url(jumbotron.jpg);
+			border-radius: 0;
+			text-align: center;
+		}
+		#email{
+			width: 300px;
+		}
+		#mail-list{
+			width: 437px;
+			margin: 0 auto;
+		}
+		#appSummary{
+			width: 500px;
+			margin: 0 auto;
+			padding: 100px 0px;
+		}
+		#cardimg{
+			width: 100%;
+		}
+		#last{
+			margin-top: 100px;
+			background-color: aqua;
+			width: 100%;
+		}
+		#download-link{
+			width: 350px;
+			margin: 0 auto;
+			padding: 300px 0px;
+		}
+		#dl{
+			position: relative;
+			left: 30px;
+		}
+		#store{
+			width:200px;
+			margin-left: 75px;
+		}
+		body{
+			position: relative;
+		}
+	</style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar">
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/575cf0ac79.js"></script>
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" id="navbar">
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">MyApp</a>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#appSummary">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#download-link">Download The App</a>
+			  </li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+			  <input class="form-control mr-sm-2" type="text" placeholder="Email">
+			  <input class="form-control mr-sm-2" type="password" placeholder="Password">
+			  <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+			</form>
+		  </div>
+	</nav>
+	<div class="jumbotron" id="jumbotron">
+		  <h1 class="display-3">My Awesome App!</h1>
+		  <p class="lead">This is why YOU should download this fantastic app!</p>
+		  <hr class="my-4">
+		  <p>Want to know more? Join our mailing list!</p>
+		  <form class="form-inline" id="mail-list">
+			  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				<div class="input-group-addon">@</div>
+				<input type="text" class="form-control" id="email" placeholder="Your Email">
+			  </div>
+			  <button type="submit" class="btn btn-primary">Sign up</button>
+		   </form>
+	</div>
+	<div class="container">
+		<div class="row" id="appSummary">
+			<h1>Why This App Is Awesome</h1>
+			<br>
+			<p class="lead">Summary, once again, of your app's awesomeness</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="card-deck">
+			  <div class="card">
+				<img class="card-img-top" src="cards.jpg" id="cardimg" alt="Card image cap">
+				<div class="card-block">
+				  <h4 class="card-title"><i class="fa fa-arrows" aria-hidden="true"></i> Card title</h4>
+				  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
+			  </div>
+			  <div class="card">
+				<img class="card-img-top" src="cards.jpg" id="cardimg" alt="Card image cap">
+				<div class="card-block">
+				  <h4 class="card-title"><i class="fa fa-arrows-h" aria-hidden="true"></i> Card title</h4>
+				  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				</div>
+			  </div>
+			  <div class="card">
+				<img class="card-img-top" src="cards.jpg" id="cardimg" alt="Card image cap">
+				<div class="card-block">
+				  <h4 class="card-title"><i class="fa fa-arrows-v" aria-hidden="true"></i> Card title</h4>
+				  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				</div>
+			  </div>
+		</div>
+	</div>
+	<div class="container" id="last">
+		<div class="row" id="download-link">
+			<h2 id="dl">Download the app!</h2>
+			<p class="lead">Really, why should I download this app??</p>
+			<p><a href=""><img src="store.jpg" id="store"></a></p>
+		</div>
+	</div>
+  </body>
+</html>

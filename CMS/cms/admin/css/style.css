@@ -1,0 +1,13 @@
+#modal_content{
+    font-size: 120%;
+    margin-left: 10px;
+}
+#modal_header{
+    color: #212121;
+}
+#modal_style{
+    background-color: #e0e0e0;
+}
+a{
+    cursor: pointer;
+}

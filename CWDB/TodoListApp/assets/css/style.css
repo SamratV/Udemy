@@ -1,0 +1,73 @@
+body{
+    font-family: sans-serif;
+    background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1{
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px;
+    font-weight: normal;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    border: 0px;
+    background-color: #f7f7f7;
+    color: #2980b9;
+    font-size: 18px;
+}
+input:focus{
+    background-color: white;
+    border: 2px solid #2980b9;
+    outline: none;
+}
+li{
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+li:nth-child(2n){
+    background-color: #f7f7f7;
+}
+span{
+    background-color: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    transition: 0.3s linear;
+    opacity: 0;
+}
+span:hover{
+    width: 40px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+i:hover{
+    cursor: pointer;
+}
+#container{
+    margin: 150px auto;
+    width: 360px;
+    background: #f7f7f7;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 255, .2);
+}
+.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+.fa-plus{
+    float: right;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Test</title></head>
+	<body>
+		<script type="text/javascript">
+			function makeURL(to,from,subject,content)
+			{
+				var url = 'http://vaibhawsamratstesthostingpackage-com.stackstaging.com/email-app/sendemail.php?to=';
+				url = url.concat(to);
+				url = url.concat("&from=");
+				url = url.concat(from);
+				url = url.concat("&subject=");
+				url = url.concat(subject);
+				url = url.concat("&content=");
+				url = url.concat(content);
+				return encodeURI(url);
+			}
+			alert(makeURL("vaibhawsky@gmail.com","samratv@hotmail.com","Hello!","This is test."));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+#toggleLogin{
+	cursor: pointer;
+	color: #2986C1;
+}
+#check{
+	margin: 10px 0px 0px 5px;
+}
+.pager_links{
+	cursor: pointer;
+}
+.nav_links{
+	cursor: pointer;
+}

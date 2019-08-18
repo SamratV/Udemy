@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Clock</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			body{
+				text-align: center;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<canvas id="canvas" height="600" width="600">
+			Please upgrade your browser!
+		</canvas>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var context = canvas.getContext("2d");
+			var radius = (canvas.width - 100)/2;
+			var center = radius+50;
+			var theta = Math.PI/6;
+			
+			context.shadowBlur = 20;
+			context.shadowOffsetX = - 1;
+			context.shadowOffsetY = 10;
+			context.shadowColor = "grey";
+			
+			setInterval(timer,1000);
+			
+			function timer()
+			{
+				context.fillStyle = "white";
+				context.fillRect(0,0,canvas.width,canvas.width);
+				context.fillStyle = "antiquewhite";
+				context.beginPath();
+				context.arc(center,center,radius,0,Math.PI*2);
+				context.fill();
+				
+				context.fillStyle = "#3e2723";
+				context.font = "27px Brush Script MT";
+				context.textAlign = "center";
+				context.textBaseline = "middle";
+				context.fillText("Vaibhaw Samrat...",center,center + radius*0.4);
+				context.font = "20px Helvetica";
+				
+				for(var i=1;i<=12;i++)
+					printNumber(i);
+				
+				context.beginPath();
+				context.arc(center,center,radius*0.02,0,Math.PI*2);
+				context.fill();
+				
+				var date = new Date();
+				var seconds = date.getSeconds();
+				var minutes = date.getMinutes() + seconds/60;
+				var hours = date.getHours() % 12 + minutes/60;
+				
+				drawHand(hours,3);
+				drawHand(minutes/5,2);
+				drawHand(seconds/5,1);
+			}
+			
+			function drawHand(value,type)
+			{
+				context.strokeStyle = "#3e2723";
+				context.moveTo(center,center);
+				context.lineTo(center + radius * (1 - 0.12*type)*Math.sin(value*theta),center - radius * (1 - 0.12*type)*Math.cos(value*theta));
+				context.lineWidth = type*2;
+				context.stroke();
+			}
+			
+			function printNumber(number)
+			{
+				context.fillText(number.toString(),center + radius*0.9*Math.sin(number*theta),center - radius*0.9*Math.cos(number*theta));
+			}
+		</script>
+	</body>
+</html>

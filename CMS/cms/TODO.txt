@@ -1,0 +1,15 @@
+1) Security
+2) Image management
+3) Pagination
+4) Bulk action
+5) Filter
+6) User defined pagination
+7) Confirm account
+8) SMTP settings
+9) Password strength
+10) Test against ZAP attack
+11) Using more AJAX
+12) Image width
+13) Forgot password
+14) Text sanitization
+15) Admin privileges
