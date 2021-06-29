@@ -4,7 +4,7 @@
 	$error = "";
 	if(array_key_exists('city',$_GET))
 	{
-		$urlContents = @file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".urlencode($_GET['city'])."&appid=43a4aebb1eaba7ce9f8f3f1d215b4b8e");
+		$urlContents = @file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".urlencode($_GET['city'])."&appid=API_KEY");
 		$weatherArray = json_decode($urlContents,true);
 		if($weatherArray['cod'] == 200)
 		{
