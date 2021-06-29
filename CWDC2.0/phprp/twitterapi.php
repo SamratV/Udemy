@@ -1,10 +1,10 @@
 <?php
 	require "twitteroauth/autoload.php";
 	use Abraham\TwitterOAuth\TwitterOAuth;
-	$consumerkey = "Q0IxGZfMLYxMK6RPoDCgJ4ANZ";
-	$consumersecret = "KSE9iQ8cum3AFkJu18tHwjxjfM9mHxVXhCs1wganW3qm6vdwIm";
-	$access_token = "2565377312-KgoTeFQ4FHdmrQKa37sNkmQgtv4FPSbU2hKdgrg";
-	$access_token_secret = "VQlvX5c9QtzNHdnZe7GttnfEACTOD93EBepo3kiAKoZG2";
+	$consumerkey = "CONSUMER_KEY";
+	$consumersecret = "CONSUMER_SECRET";
+	$access_token = "ACCESS_TOKEN";
+	$access_token_secret = "ACCESS_TOKEN_SECRET";
 	$connection = new TwitterOAuth($consumerkey, $consumersecret, $access_token, $access_token_secret);
 	$content = $connection->get("account/verify_credentials");
 	$statuses = $connection->get("statuses/home_timeline", ["count" => 25, "exclude_replies" => true]);
